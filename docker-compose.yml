@@ -1,0 +1,9 @@
+version: "2"
+services:
+  web:
+    build: .
+    image: ctftraining/base_image_nginx_php_73
+    ports:
+      - "127.0.0.1:8085:80"
+    environment:
+      - FLAG=CTFTraining{nginx_php_73}
